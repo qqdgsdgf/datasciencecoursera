@@ -33,7 +33,6 @@ It is equivalent to fetch and merge.
 ## push
 1. add files
 - git add .
-- git add 
 2. git commit -m "content"
 3. git push origin localBranch: master
 
@@ -42,7 +41,12 @@ git push -u origin master
 
 
 ## reset 回退
-git reset --hard 版本号
+遇到大文件上传限制的解决：
+1. http://www.cnblogs.com/qmmq/p/4604862.html
+2. https://www.cnblogs.com/NewBigLiang/p/7015887.html
+
+- git reset --hard 版本号 (版本号可以在git log, git reflog中查到)
+- git reset 版本号 (撤销到某commit)
 
 ## checkout
 git checkout --fileName
@@ -52,6 +56,8 @@ git checkout --fileName
 git branch
 git branch name
 git branch -d name // delete
+
+
 ## others
 - git status
 - git log
